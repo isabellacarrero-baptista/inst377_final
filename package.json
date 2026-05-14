@@ -1,0 +1,29 @@
+{
+  "name": "inst377_final",
+  "version": "1.0.0",
+  "description": "inst377 final project",
+  "homepage": "https://github.com/isabellacarrero-baptista/inst377_final#readme",
+  "bugs": {
+    "url": "https://github.com/isabellacarrero-baptista/inst377_final/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabellacarrero-baptista/inst377_final.git"
+  },
+  "license": "ISC",
+  "author": "Isabella Carrero-Baptista",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e '*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "usa-state-validator": "^1.0.6"
+  }
+}
