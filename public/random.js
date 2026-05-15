@@ -6,7 +6,7 @@ button.addEventListener("click", loadRandomArtifact);
 
 async function loadRandomArtifact() {
 
-    container.innerHTML = "<p>Loading artifact...</p>";
+    container.innerHTML = "<p>Loading...</p>";
 
         const response = await fetch(
             `http://localhost:3000/api/search?q=art`
@@ -59,7 +59,3 @@ function displayArtifact(item) {
     `;
 }
 
-window.onload = function() {
-    loadRandomArtifact();
-    displayArtifact();
-};
