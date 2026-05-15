@@ -4,10 +4,6 @@ searchBtn.addEventListener("click", async () => {
 
     const query = document.getElementById("search-input").value;
 
-    if (!query) return;
-
-    try {
-
         const response = await fetch(
             `http://localhost:3000/api/search?q=${query}`
         );
@@ -30,11 +26,6 @@ searchBtn.addEventListener("click", async () => {
 
         displayResults(data.items);
 
-    } catch (error) {
-
-        console.error("Error fetching data:", error);
-
-    }
 
 });
 
@@ -65,3 +56,7 @@ function displayResults(items) {
     });
 
 }
+
+window.onload = function() {
+    displayResults();
+};

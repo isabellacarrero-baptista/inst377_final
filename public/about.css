@@ -1,0 +1,54 @@
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    font-family: "Special Elite", system-ui;
+}
+
+/*Navbar*/
+.bar {
+    text-align: center;
+    background-color: #4d0c04;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+#main-nav {
+    background-color: #444404;
+    text-align: center;
+  }
+  
+#main-nav li {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+  }
+  
+#main-nav li:hover {
+    background-color: #8c8c09;
+    color: white;
+  }
+
+
+/*Links*/
+a {
+    color: white;
+    font-weight: bold;
+  }
+
+a:link {
+    text-decoration: none;
+  }
+
+a:visited {
+    text-decoration: none;
+  }
+
+a:active {
+    text-decoration: none;
+  }
