@@ -62,6 +62,14 @@ a:active {
     margin-top: 30px;
   }
 
+/* Typed text */
+#typed-text {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #4d0c04;
+    min-height: 30px;
+}
+
 /* Search */
 .search-container {
     display: flex;

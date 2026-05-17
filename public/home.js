@@ -1,3 +1,18 @@
+AOS.init();
+
+new Typed("#typed-text", {
+    strings: [
+        "Search Vermeer paintings...",
+        "Search ancient sculptures...",
+        "Search medieval artifacts...",
+        "Search Renaissance art..."
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true
+});
+
 const searchBtn = document.getElementById("search-btn");
 
 searchBtn.addEventListener("click", async () => {
@@ -10,7 +25,7 @@ searchBtn.addEventListener("click", async () => {
 
         const data = await response.json();
 
-        await fetch('http://localhost:3000/search-history', {
+        await fetch('/search-history', {
 
             method: 'POST',
         
@@ -41,6 +56,8 @@ function displayResults(items) {
 
         card.classList.add("result-card");
 
+        card.setAttribute("data-aos", "fade-up");
+
         card.innerHTML = `
             <img src="${item.edmPreview?.[0] || ''}" />
 
@@ -55,8 +72,7 @@ function displayResults(items) {
 
     });
 
+    AOS.refresh();
+
 }
 
-window.onload = function() {
-    displayResults();
-};
